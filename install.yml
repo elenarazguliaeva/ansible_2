@@ -1,0 +1,10 @@
+---
+- hosts: [all]
+  roles:
+    - gather
+    - user
+    - nginx
+    - helloworld
+    - docker
+    - ftp
+    - statuscheck

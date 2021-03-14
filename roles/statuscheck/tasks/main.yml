@@ -1,0 +1,5 @@
+---
+- name: Check nginx status
+  command: service nginx status
+  args:
+    warn: false

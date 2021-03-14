@@ -1,0 +1,20 @@
+---
+- name: Remove file
+  file:
+    path: /user/myuser/hello.txt
+    state: absent
+    
+- name: Remove user
+  user:
+    name: myuser
+    state: absent
+    
+- name: Remove group
+  group:
+    name: myusers
+    state: absent
+    
+- name: Remove nginx
+  apt:
+    name: nginx
+    state: absent

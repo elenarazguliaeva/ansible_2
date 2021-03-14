@@ -1,0 +1,4 @@
+---
+- name: Gather cores
+  setup:
+    filter: ansible_processor_cores 

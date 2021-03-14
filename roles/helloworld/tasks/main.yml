@@ -1,0 +1,8 @@
+---
+- name: Create file
+  copy:
+    content: Hello world!
+    dest: /user/myuser/hello.txt
+    owner: myuser
+    group: myusers
+    mode: 0754

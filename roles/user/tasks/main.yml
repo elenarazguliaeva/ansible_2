@@ -1,0 +1,13 @@
+---
+- name: Create group
+  group:
+    name: myusers
+    state: present
+    
+- name: Create user
+  user:
+    name: myuser
+    groups: myusers
+    password: myuserpass
+    home: /user/myuser
+    state: present

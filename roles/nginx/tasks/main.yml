@@ -1,0 +1,11 @@
+---
+- name: Install nginx
+  apt:
+    name: nginx
+    update_cache: yes
+    state: latest
+    
+- name: Restart nginx
+  service:
+    name: nginx
+    state: restarted
